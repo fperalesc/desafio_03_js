@@ -4,12 +4,11 @@ function pintar(ele, color = "green") {
 }
 
 const elemento1 = document.getElementById("ele1");
-if (elemento1) {
-  elemento1.addEventListener("click", function () {
-    if (elemento1.style.backgroundColor === "") {
-      pintar(elemento1, "yellow");
-    } else {
-      pintar(elemento1, "");
-    }
-  });
-}
+
+elemento1.addEventListener("click", function () {
+  if (elemento1.style.backgroundColor === "") {
+    pintar(elemento1, "yellow");
+  } else {
+    pintar(elemento1, "");
+  }
+});
